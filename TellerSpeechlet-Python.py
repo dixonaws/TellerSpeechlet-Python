@@ -112,7 +112,7 @@ def get_welcome_response():
 
     session_attributes = {}
     card_title = "Welcome"
-    speech_output = "<speak>Hi there! You're online with Co merica Bank. please tell me your 4 digit pin.</speak>"
+    speech_output = "<speak>Hi there! You're online with Comerica Bank. please tell me your 4 digit pin.</speak>"
 
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
@@ -386,13 +386,13 @@ def getTransactions(intent, session):
         strEntity=transaction['entity']
         datePosted=transaction['datePosted']
 
-        speech_output += "A " + strTransactionType + " in the amount of " + strAmountDollars + " dollars and " + strAmountCents + " cents, at " + strEntity + " on " + datePosted +", "
+        speech_output += "A " + strTransactionType + " in the amount of " + strAmountDollars + " dollars and " + strAmountCents + " cents, at " + strEntity + " on January second, "
         speech_output += "<break time='1s'/>"
     # end for loop
 
     speech_output += " What else can I help you with? Accounts, Financial Summary, Payments?"
     speech_output += "</speak>"
-    should_end_session = False
+    should_end_session = True
 
     print("*** done with getTransactions(), returning speech...")
 
