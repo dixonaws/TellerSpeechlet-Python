@@ -1,0 +1,9 @@
+GetAccountInfo Account number {AccountNumber}
+GetAccountInfo number {AccountNumber}
+VerifyPIN {PIN}
+GetTransactions Get transactions
+GetTransactions Read transactions
+GetTransactions Get last {NumberOfTransactions} transactions
+GetTransactions Read last {NumberOfTransactions} transactions
+
+

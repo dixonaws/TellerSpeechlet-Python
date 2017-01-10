@@ -1,0 +1,12 @@
+1. Update PowerCo2.py Python code
+The handler (in Lambda configuration) must be PowerCo.lambda_handler
+
+2. Create a deployment package
+We aren't using any special libraries, so we can just create a zip file with the Python code
+
+zip PowerCo-deployment.zip PowerCo.py
+
+3. Update and publish the Lambda function
+aws --profile dixonaws@amazon.com lambda update-function-code --function-name PowerCo --zip-file fileb://PowerCo-deployment.zip --publish
+
+This will immediately update the Lambda function

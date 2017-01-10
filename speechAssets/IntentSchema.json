@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "intent": "VerifyPIN",
+      "slots": [
+        {
+          "name": "PIN",
+          "type": "AMAZON.FOUR_DIGIT_NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "GetAccountInfo",
+      "slots": [
+        {
+          "name": "AccountNumber",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+
+    },
+    {
+      "intent": "GetTransactions",
+      "slots": [
+        {
+          "name": "NumberOfTransactions",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+
+    }
+
+  ]
+}

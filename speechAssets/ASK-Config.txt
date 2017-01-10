@@ -1,0 +1,50 @@
+Skill Information:
+Skill Type: Custom
+Language: English
+Application Id: <assigned automatically>
+Name: Comerica
+Invocation Name: comerica
+
+Interaction Model:
+Paste from IntentSchema.json
+
+Custom Slot Types:
+ACCOUNT_COMMAND
+Stats
+Statistics
+Analyze
+Analysis
+
+LIST_OF_ACCOUNTS
+1
+2
+3
+
+Sample Utterances:
+AccountCommand show me some {AnAccountCommand}
+AccountCommand Please show me {AnAccountCommand}
+AccountCommand {AnAccountCommand}
+GetAccount {Account}
+GetAccount Account number {Account}
+GetAccount number {Account}
+GetAccount what is the amount due for {Account}
+GetAccount what is the current amount due for {Account}
+GetAccount what is the amount due for account {Account}
+GetAccount what is the amound due for account number {Account}
+VerifyPIN {PIN}
+
+Configuration:
+Service Endpoint Type: AWS Lambda
+North America
+Paste in the Lambda ARN from your PowerCo function created previously
+
+Account Linking: no
+
+Test:
+Make sure that the test is enabled for testing on your account. The skill will be available on Echo devices registered with the developer portal's account.
+
+Publishing Information:
+For testing, it is not necessary to complete any fields on this screen
+
+Privacy and Compliance:
+For testing, it is not necessary to complete any fields on this screen
